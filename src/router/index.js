@@ -5,7 +5,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 const routes = [
   {
     path: '/',
-    component: MainLayout, // Wrap these routes with MainLayout
+    component: MainLayout,
     children: [
       {
         path: 'chats/:id',

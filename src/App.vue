@@ -1,8 +1,10 @@
 <script setup>
 import { onMounted, provide, ref } from 'vue'
+import { useRouter } from 'vue-router'
 import { getClients } from './composables/fetch'
 
 const clients = ref([])
+const router = useRouter()
 
 provide('clients', clients)
 
@@ -13,6 +15,10 @@ onMounted(async () => {
     )
   } catch (error) {
     console.error('Error fetching clients:', error)
+  }
+
+  if (clients.value) {
+    router.push(`/chats/${clients.value[0]._id}`)
   }
 })
 </script>
