@@ -5,12 +5,11 @@
       <ChatBubbleOvalLeftEllipsisIcon v-else class="size-5 text" aria-hidden="true" />
     </button>
     <div class="min-w-0">
-      <RouterLink
-        to="/"
-        class="text-2xl/7 font-bold sm:truncate sm:text-3xl sm:tracking-tight inline-block"
+      <h1
+        class="text-2xl/7 font-bold sm:truncate sm:text-3xl sm:tracking-tight inline-block select-none"
       >
-        <h1>Logo!</h1>
-      </RouterLink>
+        Logo!
+      </h1>
     </div>
     <Menu as="div" class="relative">
       <MenuButton
