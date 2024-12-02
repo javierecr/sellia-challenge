@@ -23,10 +23,10 @@ defineProps({
         :active-class="'bg-gray-100 dark:bg-slate-500 font-bold'"
         :active="selectedClientId === client._id"
         :class="[
-          'px-4 py-8 flex text-large text-slate-800 dark:text-white  hover:bg-gray-100 hover:text-slate-800 transition-none cursor-pointer',
+          'block text-slate-800 dark:text-white  hover:bg-gray-100 hover:text-slate-800 transition-none cursor-pointer',
         ]"
       >
-        <li @click="$emit('select-client')">
+        <li @click="$emit('select-client')" class="px-4 py-8 text-large">
           <p>{{ client.name }}</p>
         </li>
       </RouterLink>
